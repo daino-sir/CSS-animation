@@ -54,6 +54,10 @@
         transform-origin: top;
         transform: perspective(500px) rotateX(-25deg)
     }
+@keyframes animateSquare {
+  from {padding-left: 1%;}
+  to {padding-left: 30%;}
+}
     
     .shadow {
         position: absolute;
@@ -79,4 +83,6 @@
         width: 100px;
         height: 100px;
         background: #fff;
+       animation: animateSquare;
+       animation-duration: 1.2s;
     }
